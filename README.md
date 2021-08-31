@@ -24,8 +24,9 @@
 
 
 ## Approach for problem the code solution is trying to solve.
-
-
+1. The images are not shown till the time they are loaded to create a seamless experience
+2. The images are preloaded from before
+3. The painting process/time of images has also been taken into account
 
 ## Production Build
 
@@ -46,4 +47,22 @@
 5. Chunking and hashing the build files generated
 
 ### Screens
+
+1. Welcome Screen
+<img width="759" alt="Screenshot 2021-09-01 at 4 31 05 AM" src="https://user-images.githubusercontent.com/14069441/131587645-192c8036-9413-4956-bf7f-995e6579444f.png">
+
+2. Welcome screen with name
+<img width="686" alt="Screenshot 2021-09-01 at 4 31 15 AM" src="https://user-images.githubusercontent.com/14069441/131587681-b22f9ab2-479f-4454-98db-af2758639288.png">
+
+3. Hello Screen
+<img width="658" alt="Screenshot 2021-09-01 at 4 31 21 AM" src="https://user-images.githubusercontent.com/14069441/131587706-97e3e60f-3cf2-4f66-bdd9-aa6ae79292e9.png">
+
+4. Loading Screen
+<img width="659" alt="Screenshot 2021-09-01 at 4 40 08 AM" src="https://user-images.githubusercontent.com/14069441/131587791-9b58d424-8006-4bf7-b436-e019b4935f19.png">
+
+5. Play Screen
+<img width="1030" alt="Screenshot 2021-09-01 at 4 31 30 AM" src="https://user-images.githubusercontent.com/14069441/131587726-ca306579-404d-4f97-824b-e5475f425c06.png">
+
+6. Scoreboard
+<img width="929" alt="Screenshot 2021-09-01 at 4 39 08 AM" src="https://user-images.githubusercontent.com/14069441/131587756-1f0bd7ac-695e-4bd1-94c2-2d507e4f4b79.png">
 
