@@ -12,9 +12,10 @@ const setPlayerPlaying = <T>(payload: T): ActionCreatorReturnType<T> => {
     }
 }
 
-const toggleIsPlayClicked = () => {
+const toggleIsPlayClicked = <T>(payload: T): ActionCreatorReturnType<T> => {
     return {
         type: appConstants.TOGGLE_IS_PLAY_CLICKED,
+        payload
     }
 }
 

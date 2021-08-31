@@ -1,5 +1,6 @@
 //Library
 import { Dispatch } from 'redux'
+import { RootStateOrAny } from 'react-redux'
 
 //Imports
 import { appActions } from './app.actionCreator'
@@ -22,8 +23,9 @@ export const setPlayerPlaying = (payload: string) => {
 }
 
 export const toggleIsPlayClicked = () => {
-    return (dispatch: Dispatch) => {
-        dispatch(appActions.toggleIsPlayClicked())
+    return (dispatch: Dispatch, getState: RootStateOrAny) => {
+        let { isPlayClicked } = getState().app
+        dispatch(appActions.toggleIsPlayClicked(!isPlayClicked))
     }
 }
 
@@ -110,7 +112,17 @@ export const setImages = (payload: Array<gridImage>) => {
 }
 
 export const addPlayerPerformance = (payload: playerPerformance) => {
-    return (dispatch: Dispatch) => {
-        dispatch(appActions.addPlayerPerformance(payload))
+    return (dispatch: Dispatch, getState: () => RootStateOrAny) => {
+
+        let { overallStanding } = getState().app
+        let localPlayerStats = [
+            ...overallStanding,
+            ...[payload],
+        ]
+        localPlayerStats.sort((a, b) => {
+            return b.score - a.score
+        })
+
+        dispatch(appActions.addPlayerPerformance(localPlayerStats))
     }
 }

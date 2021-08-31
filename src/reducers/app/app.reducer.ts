@@ -12,7 +12,6 @@ export const appReducerDefaultState: IAppReducer = {
     overallStanding: [],
 }
 
-// export default (state = appReducerDefaultState, action: any): IAppReducer => {
 const AppReducer = (state = appReducerDefaultState, action: any): IAppReducer => {
     switch (action.type) {
         case appConstants.SET_PLAYER_PLAYING:
@@ -22,10 +21,9 @@ const AppReducer = (state = appReducerDefaultState, action: any): IAppReducer =>
             }
 
         case appConstants.TOGGLE_IS_PLAY_CLICKED:
-            let localIsPlayClicked = state.isPlayClicked
             return {
                 ...state,
-                isPlayClicked: !localIsPlayClicked,
+                isPlayClicked: action.payload,
             }
 
         case appConstants.SET_FETCH_IMAGE_LOADING:
@@ -53,17 +51,9 @@ const AppReducer = (state = appReducerDefaultState, action: any): IAppReducer =>
             }
 
         case appConstants.ADD_PLAYER_PERFORMANCE: {
-            let localPlayerStats = [
-                ...state.overallStanding,
-                ...[action.payload],
-            ]
-            localPlayerStats.sort((a, b) => {
-                return b.score - a.score
-            })
-
             return {
                 ...state,
-                overallStanding: localPlayerStats,
+                overallStanding: action.payload,
             }
         }
 
