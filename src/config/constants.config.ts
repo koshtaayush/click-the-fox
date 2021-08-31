@@ -27,4 +27,4 @@ export const months = [
     'Dec',
 ]
 
-export const TIMER_VALUE = 10;
+export const TIMER_VALUE = 30; //in seconds

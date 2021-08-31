@@ -7,10 +7,15 @@ import './App.css'
 
 import Welcome from './screens/Welcome'
 
+//These routes should be lazily loaded once a proper loading screen is built up
+import Play from './screens/Play'
+import Score from './screens/Score'
+
+//Something like this
 //Lazy loaded the paths to reduce the bundle size and only fetch if required
 //Will optimize app performance
-const Play = React.lazy(() => import('./screens/Play'))
-const Score = React.lazy(() => import('./screens/Score'))
+// const Play = React.lazy(() => import('./screens/Play'))
+// const Score = React.lazy(() => import('./screens/Score'))
 
 function App() {
     return (
