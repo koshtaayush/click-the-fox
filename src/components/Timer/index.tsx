@@ -72,6 +72,4 @@ const Timer: React.FC<Props> = () => {
 
 export default Timer
 
-const TimeContainer = styled.div`
-
-`
+const TimeContainer = styled.div``

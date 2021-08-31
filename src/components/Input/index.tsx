@@ -35,7 +35,7 @@ export default Input
 
 const InputBox = styled.input`
     border: 0.125rem solid #FFC000;
-    color: #000;
+    color: #000000;
     border-radius: 0.25rem;
     padding: 0.5rem;
     outline: none;
