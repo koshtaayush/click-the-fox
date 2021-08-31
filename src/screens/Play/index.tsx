@@ -86,7 +86,6 @@ const Play: React.FC<Props> = () => {
         setNumberOfImagesLoaded(numberOfImagesLoaded + 1)
     }
 
-    console.log('numberOfImagesLoaded', numberOfImagesLoaded)
     return (
         <React.Fragment>
             <Container>
@@ -107,7 +106,6 @@ const Play: React.FC<Props> = () => {
                             </LoadingContainer>
                         ))}
 
-                {console.log("imageFetchError", imageFetchError)}
                 {imageFetchError && (
                     <ErrorContainer test-id="playErrorContainer">
                         Failed to load images. Sorry for the inconvenience

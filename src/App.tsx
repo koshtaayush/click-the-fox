@@ -8,7 +8,7 @@ import './App.css'
 import Welcome from './screens/Welcome'
 
 //Lazy loaded the paths to reduce the bundle size and only fetch if required
-//Will optimize appmperformance
+//Will optimize app performance
 const Play = React.lazy(() => import('./screens/Play'))
 const Score = React.lazy(() => import('./screens/Score'))
 
