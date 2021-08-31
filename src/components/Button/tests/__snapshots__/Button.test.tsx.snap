@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Should match the snapshot 1`] = `
+<Fragment>
+  <styled.button
+    buttonType="S"
+    disabled={false}
+    name="sendMessage"
+    onClick={[MockFunction]}
+    test-id="buttonTest"
+    type="button"
+  >
+    Play
+  </styled.button>
+</Fragment>
+`;

@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Score Should match the snapshot 1`] = `
+<Fragment>
+  <styled.div>
+    <GameHeading />
+    <styled.div>
+      Scoreboard
+    </styled.div>
+    <styled.table>
+      <thead>
+        <styled.tr>
+          <styled.th>
+            Rank
+          </styled.th>
+          <styled.th>
+            Name
+          </styled.th>
+          <styled.th>
+            Date
+          </styled.th>
+          <styled.th>
+            Score
+          </styled.th>
+        </styled.tr>
+      </thead>
+      <tbody />
+    </styled.table>
+    <styled.div>
+      <styled.div>
+        <Button
+          buttonText="Move to Welcome screen"
+          buttonType="S"
+          disabled={false}
+          onClickProp={[Function]}
+        />
+      </styled.div>
+      <styled.div>
+        <Button
+          buttonText="PLAY!"
+          buttonType="L"
+          disabled={false}
+          onClickProp={[Function]}
+        />
+      </styled.div>
+    </styled.div>
+  </styled.div>
+</Fragment>
+`;

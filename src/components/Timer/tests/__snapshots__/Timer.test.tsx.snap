@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Timer Should match the snapshot 1`] = `
+<Fragment>
+  <styled.div>
+    Time Left: 
+    10
+  </styled.div>
+</Fragment>
+`;

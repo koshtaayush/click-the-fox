@@ -1,0 +1,8 @@
+{
+    "apps": [
+        {
+            "name": "tickets-4-sale-application",
+            "script": "server.js"
+        }
+    ]
+}

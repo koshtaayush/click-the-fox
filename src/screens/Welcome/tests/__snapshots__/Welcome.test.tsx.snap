@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Welcome Should match the snapshot 1`] = `
+<Fragment>
+  <styled.div>
+    <styled.div>
+      <GameHeading />
+      <styled.div
+        test-id="welcomeNameInput"
+      >
+        <styled.div>
+          Name:
+        </styled.div>
+        <styled.div>
+          <Input
+            onChangeProp={[Function]}
+            placeHolderText="Enter Name"
+          />
+        </styled.div>
+      </styled.div>
+    </styled.div>
+    <styled.div>
+      <Button
+        buttonText="Play !"
+        buttonType="L"
+        disabled={false}
+        onClickProp={[Function]}
+        test-id="welcomePlayButton"
+      />
+    </styled.div>
+  </styled.div>
+</Fragment>
+`;

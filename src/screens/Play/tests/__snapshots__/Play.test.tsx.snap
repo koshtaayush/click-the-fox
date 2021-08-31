@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Play Should match the snapshot 1`] = `
+<Fragment>
+  <styled.div>
+    <GameHeading />
+    <styled.div
+      test-id="playLoadingContainer"
+    >
+      Please wait while images are loading
+    </styled.div>
+    <styled.div />
+  </styled.div>
+</Fragment>
+`;
