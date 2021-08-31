@@ -21,6 +21,7 @@ describe('Catalog Management Reducer', () => {
             appReducerDefaultState,
             {
                 type: appConstants.TOGGLE_IS_PLAY_CLICKED,
+                payload: true
             }
         )
         expect(newState.isPlayClicked).toBe(true)

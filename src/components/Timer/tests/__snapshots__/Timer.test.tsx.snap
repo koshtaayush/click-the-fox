@@ -4,7 +4,7 @@ exports[`Timer Should match the snapshot 1`] = `
 <Fragment>
   <styled.div>
     Time Left: 
-    10
+    30
   </styled.div>
 </Fragment>
 `;
